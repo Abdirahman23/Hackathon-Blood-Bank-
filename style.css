@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/***************************************Nav section***********************************/
+
+html{
+    font-family: "Nunito" , sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+p{
+    font-size: 1.2rem ;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+section {
+    padding: 6rem 0;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+   
+}
+
+.container{
+
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0;
+    border-bottom: 1px solid rgb(129, 129, 127);
+
+}
+
+
+
+.menu-icons i{
+
+    font-size: 2.5rem;
+    color: #fafafa;
+    cursor: pointer;
+    display: flex;
+}
+
+.close i {
+  
+    color: rgb(255, 255, 255);
+}
+
+.nav-list{
+
+    width: 20rem;
+    height: 100vh;
+    background-color:  #ff0000;
+    position: fixed;
+    left: -30rem ;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    z-index: 1500;
+}
+
+.nav-list.active{
+    left: 0;
+}
+
+.nav-item{
+
+    margin: 1.5rem 0;
+    
+}
+
+.nav-link{
+
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(141, 14, 0);
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+/***************************************** Hero section******************************/
+.hero{
+    
+}
+.big-tear{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index : 90;
+    width: 80%;
+    left: 5rem;
+    top: 10rem;
+}
+
+.tear-1{
+    position: absolute;
+    top: -2rem;
+    left: 20rem;
+    z-index: 100;
+    display: flex;
+    transform: rotate(-40deg);
+    border: 2px solid rgb(233, 231, 231);
+    background-color: white;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: #ff0000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tear-1:hover{
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+}
+
+.tear-2:hover{
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+}
+
+.tear-1 p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    font-size: 3rem;
+    font-family: "Aldrich" , sans-serif;
+    font-weight: bold;
+    transform: rotate(40deg);
+}
+
+.tear-1 p span{
+
+    font-size: 2rem;
+}
+
+.tear-2 p span{
+
+    font-size: 2rem;
+}
+
+
+.tear-2 p{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    font-size: 3rem;
+    font-family: "Aldrich" , sans-serif;
+    font-weight: bold;
+    transform: rotate(40deg);
+
+
+}
+
+
+.tear-2{
+   
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    transform: rotate(-40deg);
+    border: 2px solid rgb(233, 231, 231);
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: #ff0000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/**********************************************Blood Types**********************************************/
+
+.tears{
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tear {
+    margin: 30px 10px;
+    display: flex;
+    transform: rotate(-40deg);
+    border: 2px solid rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: #ff0000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tear span{
+    width:100%;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 3px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(40deg);
+}
+.tear:hover{
+   
+    color:white;
+    box-shadow: 0 0 5px black;
+    transform: rotate(140deg);
+}
+.tear:hover span{
+    transform: rotate(-140deg);
+    }
+
+    .hero{
+        z-index: -1;
+        
+    }
+
+
+ /************* users    *************/
+.user_bg{
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+    
+
+}
+
+.donar-list{
+    font-size: 2rem;
+    font-family: "aldrich" , sans-serif;
+    padding: 2rem;
+}
+ .user1{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user2{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user3 img{
+    height: 5rem; 
+    width: 5rem;
+ }
+
+ .user2 img{
+    height: 5rem; 
+    width: 5rem;
+ }
+
+ .user3{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user1:hover, .tear{
+     letter-spacing: 2px;
+     background:linear-gradient(#ff0f2b , #ff3212);
+     color: white;
+     border-color:white ;
+
+ }
+
+ .user2:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+.user3:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+ 
+.user4{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user4:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+
+.user5{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user5:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+.user6{
+    width: 100%;
+    position: relative;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow:0 0 10px rgba(105, 105, 105, 0.24);
+     transition: 0.5s ease-in-out;
+    
+ }
+
+ .user5:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+.user6:hover, .tear{
+    letter-spacing: 2px;
+    background:linear-gradient(#ff0f2b , #ff3212);
+    color: white;
+    border-color:white ;
+
+}
+
+.user6 img{
+    height: 5rem; 
+    width: 5rem;
+ }
+
+.user4 img{
+    height: 5rem; 
+    width: 5rem;
+ }
+ 
+ .user5 img{
+    height: 5rem; 
+    width: 5rem;
+ }
+
+
+
+.image{
+    display: flex;
+}
+
+.blood-type{
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+
+  
+    
+}
+
+.tear{
+    background:linear-gradient(#ff0f2b , #ff3212); 
+    color: white;
+    
+}
+
+.info{
+        
+   margin-top: .5rem ;
+   margin-left: 10%;
+   cursor: pointer;
+}
+
+.info h4{
+    font-family: "Aldrich" ,  sans-serif;
+    font-size: 2rem;
+    
+}
+
+.info {
+    font-size: 1.2rem;
+}
+
+.image img{
+    border-radius: 100%;
+}
+
+/******************************************* User Information *****************************/
+.show-me.model-box{
+    display: block;
+}
+.model-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.459);
+    z-index: 9999;
+    display: none;
+    overflow-x: hidden;
+}
+
+
+.user-info{
+    width: 70%;
+    padding: 3rem 10rem;
+    border-radius: 5rem;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.829);
+    position: relative;
+ 
+}
+
+
+
+
+.basic-info h2{
+    font-size: 3rem;
+    font-family: "aldrich" , sans-serif;
+    color:red;
+}
+
+.basic-info p{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.basic-info p span{
+    color: red;
+}
+
+
+.basic-info img{
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+}
+
+
+.medical-info{
+    position: absolute;
+    top: 10%;
+    right: 10% ;
+}
+
+.medical-info h2{
+    font-size: 3rem;
+    font-family: "aldrich" , sans-serif;
+    color:red;
+}
+
+
+.medical-info p{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.medical-info p span{
+    color: red;
+}
+
+
+/**********************************************media*****************************************/
+
+@media only screen and (max-with:768px){
+
+}
